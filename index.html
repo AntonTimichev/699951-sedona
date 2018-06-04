@@ -18,20 +18,22 @@
                 </ul>
             </nav>
         </header>
-        <main class="conteiner">
-            <section class="wellcome-header">
-                <h1>Wellcome <span class="decorative-text">to the gorgeous</span></h1>
+        <main class="container">
+            <section class="welcome-header">
+                <h1>
+                    <img width="143" height="71" src="http://placehold.it/143x71" alt="Приветствие">
+                </h1>
                 <p class="banner">Sedona</p>
                 <p class="slogan">&#8220;Because the Grand Kanyon sucks!&#8222;</p>
             </section>
             <section class="reasons">
-                <h2 class="visually-hidden">Седона</h2>
+                <h2 class="visually-hidden">Описание Седоны</h2>
                 <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
                 <p>Рассмотри 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                 <ul class="reasons-list">
                     <li class="reasons-item">
                         <h3>Настоящий городок</h3>
-                        <p>№1</p>
+                        <p>&#8211; №1 &#8211;</p>
                         <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
                         <img width="800" height="259" src="http://placehold.it/800x300" alt="Фото Седоны">
                         <ul class="features-list">
@@ -51,23 +53,23 @@
                    </li>
                     <li class="reasons-item">
                         <h3>Там есть мост дьявола</h3>
-                        <p>№2</p>
+                        <p>&#8211; №2 &#8211;</p>
                         <p>Да, по нему можно пройти! Если вы осмелитесь</p>
                         <img width="800" height="258" src="http://placehold.it/800x300" alt="Фото Каньона">
                     </li>
                     <li class="reasons-item">
                         <h3>Небольшая площадь</h3>
-                        <p>№3</p>
+                        <p>&#8211; №3 &#8211;</p>
                         <p>Все достопримечательности находяться очень близко</p>
                     </li>
                     <li class="reasons-item">
                         <h3>Красивая дорога</h3>
-                        <p>№4</p>
+                        <p>&#8211; №4 &#8211;</p>
                         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </li>
                     <li class="reasons-item">
                         <h3>Мало туристов</h3>
-                        <p>№5</p>
+                        <p>&#8211; №5 &#8211;</p>
                         <p>Большинство едет в Гранд-Каньон и толпится там</p>
                     </li>
                 </ul>
@@ -76,31 +78,30 @@
                 <h2 class="visually-hidden">Форма поиска</h2>
                 <b>Заинтересовались?</b>
                 <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <a class="search-hotel" href="#">Поиск гостиницы в седоне</a>
                     <form action="/echo" method="post">
-                        <button name="open-form">Поиск гостиницы в седоне</button>
-                        <fieldset>
-                            <div class="arrival">
-                                <label for="arrival-date">Дата заезда:</label>
-                                <input type="text" id="arrival-date" name="arrival-date">
+                        <div class="arrival">
+                            <label for="arrival-date">Дата заезда:</label>
+                            <input type="text" id="arrival-date" name="arrival-date" placeholder="24 апреля 2017">
+                        </div>
+                        <div class="departure">
+                            <label for="departure-date">Дата выезда:</label>
+                            <input type="text" id="departure-date" name="departure-date" placeholder="4 июля 2017">
+                        </div>
+                        <div class="half-field">
+                            <div class="half-width">
+                                <label for="adults">Взрослые:</label>
+                                <input type="number" min="1" max="5" step="1" id="adults" name="adults" placeholder="2">
                             </div>
-                            <div class="departure">
-                                <label for="departure-date">Дата выезда:</label>
-                                <input type="text" id="departure-date" name="departure-date">
+                            <div class="half-width">
+                                <label for="children">Дети:</label>
+                                <input type="number" min="0" max="5" step="1"  id="children" name="children" placeholder="0">
                             </div>
-                            <div class="half-field">
-                                <div class="half-width">
-                                    <label for="adults">Взрослые:</label>
-                                    <input type="number" min="1" max="5" step="1" id="adults" name="adults">
-                                </div>
-                                <div class="half-width">
-                                    <label for="children">Дети:</label>
-                                    <input type="number" min="0" max="5" step="1"  id="children" name="children">
-                                </div>
-                            </div>
-                            <input type="submit" name="search-btn" value="Найти">
-                        </fieldset>
+                        </div>
+                        <input type="submit" name="search-btn" value="Найти">
                     </form> 
-                <img class="map" width="1200" height="475" src="http://placehold.it/1200x475" alt="Карта местоположения">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d74070.67052522882!2d-111.75042213593235!3d34.86898752419942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1528115643524" width="1200" height="475" frameborder="0" style="border:0" allowfullscreen>
+                </iframe>
             </section>
         </main>
         <footer class="main-footer">
@@ -111,9 +112,9 @@
                 <li><a class="social-btn" href="#">Youtube</a></li>
             </ul>
             <div class="footer-copyright">
-                <span class="copyright">Website by
-                    <a class="copyright-btn" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
-                </span>
+                <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">Website by
+                    <span class="copyright-btn">html academy</span>
+                </a>
             </div>
         </footer>
     </body>
