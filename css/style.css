@@ -49,7 +49,7 @@ a {
 }
 
 /*цвет ссылки текущей страницы*/
-.inner-page .current{
+.inner-page .current {
     color: #766357;
 }
 
@@ -71,7 +71,7 @@ a {
 .search-hotel,
 .hashtag,
 .content-header b,
-.result-item h3{
+.result-item h3 {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
