@@ -256,7 +256,7 @@ input[type="submit"] {
     color: #ffffff;
     vertical-align: middle;
     
-    background-color: rgb(93, 78, 75, 0);
+    background-color: rgba(93, 78, 75, 0); 
     
     border: 2px solid #ffffff;
 } 
@@ -281,7 +281,7 @@ input[type="submit"] {
 .form-price input[type="text"] {
     text-align: center;
     
-    background-color: rgb(93, 78, 75, 0);
+    background-color: rgba(93, 78, 75, 0); 
     
     border: 2px solid #ffffff;
 }
