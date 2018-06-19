@@ -1,9 +1,6 @@
-body,
-.inner-page {
+body {
     padding: 0;
     margin: 0;
-    
-    width: 1280px;
     
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
@@ -17,9 +14,9 @@ body,
 
 /*Параметры заголовка главной страницы*/
 .welcome-header {
-    height: 800px;
+    min-height: 800px;
     
-    background-color: #9ba29f;
+    background-color: #d6e4ef;
     background-image: url("../img/background_photo_main.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -48,14 +45,12 @@ a {
     color: #81b3d2;
 }
 
-/*цвет ссылки текущей страницы*/
-.inner-page .current {
-    color: #766357;
+.site-navigation a:active {
+    color: #cacaca;
 }
 
-/*дублируем стиль при наведении*/
-.inner-page .current:hover,
-.inner-page .current:active {
+/*цвет ссылки текущей страницы*/
+.site-navigation a.current {
     color: #766357;
 }
 
@@ -171,6 +166,16 @@ input[type="number"]::-moz-input-placeholder {
     text-transform: uppercase;
     color: #000000;
 }
+/*fieldset стоимость в сутки*/
+.form-price input[type="text"]::-webkit-input-placeholder {
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.form-price input[type="text"]::-moz-input-placeholder {
+    font-weight: normal;
+    color: #ffffff;
+}
 
 .search input {
     background-color: #f2f2f2;
@@ -245,8 +250,9 @@ input[type="submit"] {
     font-weight: bold;
 }
 
-/*стиль кнопки отправки формы 2 страницы*/
-.inner-page input[type="submit"] {
+/*стиль кнопки отправки формы 2 страницы
+ИЗМЕНЕН! т.к. убран класс inner-page у body*/
+input[value="Показать"] {
     font: inherit;
     
     font-size: 14px;
@@ -261,21 +267,10 @@ input[type="submit"] {
     border: 2px solid #ffffff;
 } 
 
-.inner-page input[type="submit"]:hover {
+input[value="Показать"]:hover {
     color: #000000;
     
     background-color: #ffffff;
-}
-
-/*fieldset стоимость в сутки*/
-.form-price input[type="text"]::-webkit-input-placeholder {
-    font-weight: normal;
-    color: #ffffff;
-}
-
-.form-price input[type="text"]::-moz-input-placeholder {
-    font-weight: normal;
-    color: #ffffff;
 }
 
 .form-price input[type="text"] {
