@@ -8,20 +8,31 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="main-header">
-            <nav class="main-navigation">
-                <a class="main-header-logo">
-                    <img src="img/main_logo.png" width="138" height="70" alt="Логотип Седона">
-                </a>
-                <ul class="site-navigation">
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Фото и видео</a></li>
-                    <li><a href="#">Карта штата</a></li>
-                    <li><a href="inner.html">Гостиницы</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="container">
+        <div class="container">
+            <header class="main-header">
+                <nav class="main-navigation">
+                    <a class="main-header-logo">
+                        <img src="img/main_logo.png" width="138" height="70" alt="Логотип Седона">
+                    </a>
+                    <ul class="site-navigation">
+                        <li>
+                            <a href="#">Информация</a>
+                        </li>
+                        <li>
+                            <a href="#">Фото и видео</a>
+                        </li>
+                        <li>
+                            <a href="#">Карта штата</a>
+                        </li>
+                        <li>
+                            <a href="inner.html">Гостиницы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="container">
+        <main class="main-content">
             <section class="welcome-header">
                 <h1>
                     <img src="img/decor_text.png" width="458" height="352" alt="Приветствие">
@@ -31,7 +42,7 @@
                 <div class="reasons-header">
                     <h2 class="visually-hidden">Описание Седоны</h2>
                     <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
-                    <p>Рассмотри 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+                    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                 </div>
                 <div class="reasons-main">
                     <div class="reasone-item">
@@ -62,7 +73,7 @@
                     <div class="reasone-item">
                         <h3>Там есть мост дьявола</h3>
                         <span>&#8211; №2 &#8211;</span>
-                        <p>Да, по нему можно пройти! Если вы осмелитесь</p>
+                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </div>
                     <div class="reasone-photo-2">
                         <img src="img/devil_bridge.jpg" width="800" height="256" alt="Фото Каньона">
@@ -91,7 +102,9 @@
                     <h2 class="visually-hidden">Форма поиска</h2>
                     <b>Заинтересовались?</b>
                     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                    <a class="search-hotel" href="#">Поиск гостиницы в седоне</a>
+                    <a class="search-hotel" href="#">
+                        <span>Поиск гостиницы в седоне</span>
+                    </a>
                 </div>
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <div class="arrival">
@@ -118,6 +131,8 @@
                 </iframe>
             </section>
         </main>
+        </div>
+        <div class="container">
         <footer class="main-footer">
             <a class="hashtag">#visitsedona</a>
             <ul class="social-btn-list">
@@ -138,7 +153,8 @@
                 </li>
             </ul>
             <div class="footer-copyright">
-                <a href="https://htmlacademy.ru/intensive/htmlcss">Website by
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <span>Website by</span>
                     <span class="visually-hidden">html academy</span>
                     <svg 
                     width="115" height="41" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
@@ -150,5 +166,6 @@
                 </a>
             </div>
         </footer>
+        </div>
     </body>
 </html>
