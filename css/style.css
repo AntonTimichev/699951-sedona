@@ -413,6 +413,8 @@ body {
     display: flex;
     flex-direction: column;
     
+    position: relative;
+    
     min-height: 56px;
 }
 
@@ -429,9 +431,9 @@ body {
 }
 
 .main-header-logo {
-    align-self: center;
-    
     position: absolute;
+    
+    align-self: center;
 }
 
 .site-navigation li:nth-child(2) {
@@ -464,7 +466,7 @@ body {
     height: 57px;
 }
 
-/*===========================================*/
+/*============================================*/
 .reasons-header {
     display: flex;
     flex-direction: column;
