@@ -154,13 +154,6 @@ input[type="text"]::-webkit-input-placeholder {
     color: #000000;
 }
 
-input[type="number"]::-webkit-input-placeholder {
-    line-height: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #000000;
-}
-
 input[type="text"]::-moz-input-placeholder {
     line-height: 26px;
     font-weight: bold;
@@ -168,12 +161,6 @@ input[type="text"]::-moz-input-placeholder {
     color: #000000;
 }
 
-input[type="number"]::-moz-input-placeholder {
-    line-height: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #000000;
-}
 /*fieldset стоимость в сутки*/
 .form-price input[type="text"]::-webkit-input-placeholder {
     font-weight: normal;
@@ -742,8 +729,7 @@ body {
     border: none;
 }
 
-.arrival,
-.departure,
+.flight-date,
 .half-field,
 .search-hotel-form input[type="submit"] {
     display: flex;
@@ -753,16 +739,58 @@ body {
     width: 458px;
 }
 
-.arrival,
-.departure {
+.flight-date {
+    position: relative;
+    
     margin-bottom: 29px;
+}
+
+.calendar-icon {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+.calendar-icon:hover {
+    cursor: pointer;
+}
+
+.calendar-icon:hover path {
+    fill: #000000;
+}
+
+.calendar-icon:active path {
+    fill: #81b3d2;
+}
+
+.flight-date label,
+.half-width:first-child label {
+    min-width: 112px;
+}
+
+.half-width:last-child label {
+    min-width: 65px;
+}
+
+.half-width {
+    display: flex;
+    align-items: baseline;
+}
+
+.half-width button {
+    border: none;
+    
+    min-width: 20px;
+    height: 20px;
+    
+    padding: 0;
 }
 
 .half-field {
     margin-bottom: 55px;
 }
 
-.search-hotel-form input[type="text"] {
+.search-hotel-form input[name="arrival-date"], .search-hotel-form input[name="departure-date"] {
     width: 346px;
     
     padding: 0;
@@ -770,7 +798,8 @@ body {
     padding-right: 0;
 }
 
-.search-hotel-form input[type="number"] {
+.search-hotel-form input[name="children"],
+.search-hotel-form input[name="adults"] {
     width: 114px;
     
     text-align: center;
@@ -779,21 +808,15 @@ body {
     padding: 12px 0;
 }
 
-.half-width:first-child label {
-    margin-right: 34px;
-}
-
-.half-width:last-child label {
-    margin-right: 32px;
-}
-
 .search-hotel-form input[type="submit"] {
+    display: block;
+    
     padding: 0;
-/*    padding: 16px 196px;*/
+
     min-height: 58px;
     min-width: 300px;
     
-    text-align: center;
+    line-height: 1;
 }
 
 
@@ -865,7 +888,7 @@ a.social-btn {
 }
 
 
-.form-field form {
+.form-filter {
     display: flex;
     justify-content: space-between;
     
@@ -875,33 +898,30 @@ a.social-btn {
 
 .form-list {
     display: flex;
-
     flex-direction: column;
-    justify-content: space-between;
-
-    
-    height: 217px;
     
     border: none;
     
     margin: 0;
     padding: 0;
+    margin-top: 27px;
 }
 
 .form-list h3 {
     margin: 0;
     padding: 0;
+    margin-bottom: 25px;
 }
 
-.form-field .form-features {
+.form-features {
     margin-right: 119px;
 }
 
-.form-field .form-hotels {
+.form-hotels {
     margin-right: auto;
 }
 
-.form-field .form-price {
+.form-price {
     margin-left: auto;
 }
 
@@ -909,6 +929,11 @@ a.social-btn {
     position: relative;
     
     padding-left: 40px;
+    margin-bottom: 25px;
+}
+
+.form-list:not(:last-child) label:last-of-type {
+    margin-bottom: 0;
 }
 
 .form-list:not(:last-child) label::before {
