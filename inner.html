@@ -16,16 +16,16 @@
                         <img src="img/main_logo.png" width="138" height="70" alt="Логотип Седона">
                     </a>
                     <ul class="site-navigation">
-                        <li>
+                       <li class="site-navigation-item">
                             <a href="#">Информация</a>
                         </li>
-                        <li>
+                        <li class="site-navigation-item">
                             <a href="#">Фото и видео</a>
                         </li>
-                        <li>
+                        <li class="site-navigation-item">
                             <a href="#">Карта штата</a>
                         </li>
-                        <li>
+                        <li class="site-navigation-item">
                             <a class="current">Гостиницы</a>
                         </li>
                     </ul>
@@ -39,20 +39,20 @@
                     <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
                         <fieldset class="form-list form-features">
                             <h3>Инфраструктура:</h3>
-                            <input class="visually-hidden" type="checkbox" id="pool" name="pool">
+                            <input class="visually-hidden" type="checkbox" id="pool" name="pool" checked>
                             <label for="pool">Бассейн</label>
-                            <input class="visually-hidden" type="checkbox" id="parking" name="parking">
+                            <input class="visually-hidden" type="checkbox" id="parking" name="parking" disabled>
                             <label for="parking">Парковка</label>
                             <input class="visually-hidden" type="checkbox" id="wi-fi" name="wi-fi">
                             <label for="wi-fi">Wi-Fi</label>
                         </fieldset>
                         <fieldset class="form-list form-hotels">
                             <h3>Тип жилья:</h3>
-                            <input class="visually-hidden" type="checkbox" id="hotel" name="hotel">
+                            <input class="visually-hidden" type="checkbox" id="hotel" name="hotel" checked>
                             <label for="hotel">Гостиница</label>
-                            <input class="visually-hidden" type="checkbox" id="motel" name="motel">
+                            <input class="visually-hidden" type="checkbox" id="motel" name="motel" checked>
                             <label for="motel">Мотель</label>
-                            <input class="visually-hidden" type="checkbox" id="apartament" name="apartment">
+                            <input class="visually-hidden" type="checkbox" id="apartament" name="apartment" checked>
                             <label for="apartament">Апартаменты</label>
                         </fieldset>
                         <fieldset class="form-list form-price">
