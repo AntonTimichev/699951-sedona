@@ -348,7 +348,7 @@ img {
             align-items: center;
     
     margin: 0 auto;
-    padding: 47px 45px 0;
+    padding: 47px 45px 40px;
     
     width: 400px;
     
@@ -430,7 +430,7 @@ img {
             flex-direction: column;
     
     margin: 0 auto;
-    padding: 56px 50px 0;
+    padding: 56px 50px 40px;
     
     width: 400px;
     min-height: 330px;
@@ -522,7 +522,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     
-    padding: 47px 50px 0;
+    padding: 47px 50px 30px;
     
     min-height: 256px;
     width: 400px;
@@ -983,7 +983,7 @@ a.social-btn:active {
         -ms-flex-pack: justify;
             justify-content: space-between;
     
-    padding: 27px 72px 0;
+    padding: 27px 72px 31px;
     
     min-height: 217px;
     
@@ -1385,19 +1385,28 @@ input[type="checkbox"]:disabled + label::before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     
     padding: 0 72px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     
-    height: 150px;
+    min-height: 150px;
     
     border-bottom: 1px solid #e5e5e5;
+    
+    -webkit-box-sizing: border-box;
+    
+            box-sizing: border-box;
 }
 
 .result-item h3 {
     margin-top: -5px;
+    margin-bottom: 7px;
+    
+    width: 360px;
 }
 
 .hotel-picture {
@@ -1426,7 +1435,7 @@ input[type="checkbox"]:disabled + label::before {
     
     margin-right: auto;
     
-    height: 90px;
+    min-height: 90px;
 }
 
 .hotel-name {
@@ -1452,6 +1461,10 @@ input[type="checkbox"]:disabled + label::before {
     width: 258px;
 }
 
+.hotel-info div:not(:last-child) {
+    margin-right: 6px;
+}
+
 .hotel-details,
 .price-reserve {
     display: -webkit-box;
@@ -1466,10 +1479,6 @@ input[type="checkbox"]:disabled + label::before {
             justify-content: space-between;
     
     min-height: 62px;
-}
-
-.hotel-details {
-    margin-right: 6px;
 }
 
 .raiting {
