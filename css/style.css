@@ -861,11 +861,11 @@ a.search-hotel:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    
+    padding-left: 132px;
     
     height: 120px;
     width: 1200px;
@@ -883,6 +883,10 @@ a.search-hotel:active {
     opacity: 0.9;
 }
 
+.hashtag {
+    margin-right: 256px;
+}
+
 .footer-copyright a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -897,7 +901,7 @@ a.search-hotel:active {
     line-height: 26px;
     color: #000000;
     
-    min-width: 198px;
+    min-width: 197px;
 }
 
 .footer-copyright svg:hover path {
@@ -915,6 +919,10 @@ a.search-hotel:active {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    
+    padding: 0;
+    margin: 0;
+    margin-right: 229px;
     
     min-width: 150px;
 }
