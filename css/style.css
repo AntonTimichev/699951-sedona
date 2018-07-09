@@ -653,9 +653,17 @@ a.search-hotel:active {
     background-color: #503e33;
 }
 
-.search iframe {
+.map iframe {
     height: 593px;
     width: 1200px;
+}
+
+.map {
+    height: 593px;
+    width: 1200px;
+    
+    background-image: url("../img/map.jpg");
+    background-position: top;
 }
 
 .search {
@@ -665,8 +673,6 @@ a.search-hotel:active {
 /*стили формы поиска гостиницы*/
 
 .search-hotel-form {
-    display: none;
-    
     position: absolute;
     top: 291px;
     left: 316px;
@@ -681,6 +687,18 @@ a.search-hotel:active {
     -webkit-box-sizing: border-box;
     
             box-sizing: border-box;
+    
+    -webkit-animation-name: close-form;
+    
+            animation-name: close-form;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-transform-origin: top;
+            transform-origin: top;
 }
 
 .search-header {
@@ -689,6 +707,63 @@ a.search-hotel:active {
 
 .form-show {
     display: block;
+    
+    -webkit-animation-name: open-form;
+    
+            animation-name: open-form;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+}
+
+.modal-error {
+    -webkit-animation-name: flashing;
+            animation-name: flashing;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+}
+
+@-webkit-keyframes open-form {
+    from {-webkit-transform: scaleY(0);transform: scaleY(0);}
+    to {-webkit-transform: scaleY(1);transform: scaleY(1);}
+}
+
+@keyframes open-form {
+    from {-webkit-transform: scaleY(0);transform: scaleY(0);}
+    to {-webkit-transform: scaleY(1);transform: scaleY(1);}
+}
+
+@-webkit-keyframes close-form {
+    from {-webkit-transform: scaleY(1);transform: scaleY(1);}
+    to {-webkit-transform: scaleY(0);transform: scaleY(0);}
+}
+
+@keyframes close-form {
+    from {-webkit-transform: scaleY(1);transform: scaleY(1);}
+    to {-webkit-transform: scaleY(0);transform: scaleY(0);}
+}
+
+@-webkit-keyframes flashing {
+    0% {background-color: #dfdddd;}
+    20% {background-color: #f2f2f2;}
+    40% {background-color: #dfdddd;}
+    60% {background-color: #f2f2f2;}
+    80% {background-color: #dfdddd;}
+    100% {background-color: #f2f2f2;}
+}
+
+@keyframes flashing {
+    0% {background-color: #dfdddd;}
+    20% {background-color: #f2f2f2;}
+    40% {background-color: #dfdddd;}
+    60% {background-color: #f2f2f2;}
+    80% {background-color: #dfdddd;}
+    100% {background-color: #f2f2f2;}
 }
 
 .search-hotel-form input {
@@ -1645,7 +1720,6 @@ a.social-btn:active {
     
     background-color: #503e33;
 }
-
 
 
 

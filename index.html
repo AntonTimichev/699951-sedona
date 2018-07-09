@@ -132,20 +132,30 @@
                             <div class="half-width">
                                 <label for="adults">Взрослые:</label>
                                 <input type="text" id="adults" name="adults" placeholder="2">
-                                <button class="count-down" type="button"></button>
-                                <button class="count-up" type="button"></button>
+                                <button class="count-down" type="button">
+                                    <span class="visually-hidden">Убавить число взрослых на один</span>
+                                </button>
+                                <button class="count-up" type="button">
+                                    <span class="visually-hidden">Прибавить число взрослых на один</span>
+                                </button>
                             </div>
                             <div class="half-width">
                                 <label for="children">Дети:</label>
                                 <input type="text" id="children" name="children" placeholder="0">
-                                <button class="count-down" type="button"></button>
-                                <button class="count-up" type="button"></button>
+                                <button class="count-down" type="button">
+                                    <span class="visually-hidden">Убавить число детей на один</span>
+                                </button>
+                                <button class="count-up" type="button">
+                                    <span class="visually-hidden">Прибавить число детей на один</span>
+                                </button>
                             </div>
                         </div>
                         <input class="search-btn" type="submit" name="search-btn" value="Найти">
-                    </form> 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d74070.67052522882!2d-111.75042213593235!3d34.86898752419942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1528115643524" width="1718" height="748" style="border:0" allowfullscreen>
-                    </iframe>
+                    </form>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d74070.67052522882!2d-111.75042213593235!3d34.86898752419942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1528115643524" width="1718" height="748" style="border:0" allowfullscreen>
+                        </iframe>
+                    </div>
                 </section>
             </main>
 
