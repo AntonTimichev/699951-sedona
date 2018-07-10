@@ -119,6 +119,12 @@ a {
     color: #ffffff;
 }
 
+.search-hotel-form input[type="text"] {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+}
+
 /*стили обертки для страниц*/
 
 .container {
@@ -668,6 +674,8 @@ a.search-hotel:active {
     
     background-image: url("../img/map.jpg");
     background-position: top;
+    
+    background-color: #e9e5dc;
 }
 
 .search {
@@ -753,20 +761,20 @@ a.search-hotel:active {
 }
 
 @-webkit-keyframes flashing {
-    0% {background-color: #dfdddd;}
+    0% {background-color: #f19ca6;}
     20% {background-color: #f2f2f2;}
-    40% {background-color: #dfdddd;}
+    40% {background-color: #f19ca6;}
     60% {background-color: #f2f2f2;}
-    80% {background-color: #dfdddd;}
+    80% {background-color: #f19ca6;}
     100% {background-color: #f2f2f2;}
 }
 
 @keyframes flashing {
-    0% {background-color: #dfdddd;}
+    0% {background-color: #f19ca6;}
     20% {background-color: #f2f2f2;}
-    40% {background-color: #dfdddd;}
+    40% {background-color: #f19ca6;}
     60% {background-color: #f2f2f2;}
-    80% {background-color: #dfdddd;}
+    80% {background-color: #f19ca6;}
     100% {background-color: #f2f2f2;}
 }
 
